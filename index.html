@@ -44,7 +44,7 @@
                 
                 <ul class="navbar-nav align-items-lg-center justify-content-end w-100">
                   <li class="nav-item active">
-                    <a class="nav-link" onclick="location.href='#inicio'" data-bs-toggle="collapse" data-bs-target="#navbarNav">INÍCIO</a>
+                    <a class="nav-link" onclick="location.href='#sicoob'" data-bs-toggle="collapse" data-bs-target="#navbarNav">INÍCIO</a>
                   </li>
                   
                   <li class="nav-item">
@@ -73,36 +73,50 @@
         </div>
       </div>
     </section>
+    <div class="nav-space"></div>
 
     <section id="botao">
 
       <div class="container">
         <div class="relative">
           <div class="absolute card-position">
-            <div class="card-float text-center p-4 d-inline-block">
-              <img src="imagens/painel.png" alt="painel da sorte" class="img-fluid lettering">
-              <p class="c-branco">
-                Insira seu código<br>
-                para ativar o painel! 
-              </p>
-              <div class="container-float mb-3" id="js-container">
-                <canvas class="canvas" id="js-canvas" width="280" height="180"></canvas>
+            <div id="painel" class="card-float text-center d-inline-block">
+              <div class="opener">
+                <div class="resize btn-click">
+                  
+                </div>
                 
-                <form class="form" >
-                  <h1 class="fw-900 mb-0">
-                    Parabéns
-                  </h1>
-                  <h5 class="fw-400 mb-0">
-                    Você ganhou <b>10 mil Pontos Coopera</b>
-                  </h5>
-                  <p class="mb-0">
-                    Seus pontos serão depositados em até 30 dias.
-                  </p>  
-                </form>  
               </div>
-              <a href="" class="btn btn-click bg-branco c-verdee fw-600 border-radius-25">
-                Inserir novo código
-              </a>
+              <img src="imagens/painel.png" alt="painel da sorte" class="img-fluid lettering">
+              <div class="content">
+                
+                <div class="container-float mb-3" id="js-container">
+                  <form class="form" >
+                    <h1 class="fw-900 mb-0">
+                      Parabéns
+                    </h1>
+                    <h5 class="fw-400 mb-0">
+                      Você ganhou <b>10 mil Pontos Coopera</b>
+                    </h5>
+                    <p class="small mb-0">
+                      Seus pontos serão depositados em até 30 dias.
+                    </p>  
+                  </form>  
+                  <canvas class="canvas" id="js-canvas" width="280" height="180"></canvas>
+                </div>
+
+                <p id="painel-text" class="c-branco">
+                  Insira seu código<br>
+                  para ativar o painel! 
+                </p>
+                <!--
+                <input type="text" id="painel-cod">
+                -->
+                <a id="painel-btn" href="" class="btn btn-click bg-branco c-verdee fw-600 border-radius-25">
+                  Inserir novo código
+                </a>
+              </div>
+            
             </div>
           </div>        
         </div>
@@ -121,11 +135,26 @@
 
 
 
-    <section id="sicoob" class="bg-cinza-300 h-100-v">
-      <div class="container py-5">
-        <div class="row">
-          <div class="col">
-            
+    <section id="sicoob" class="bg-cinza-300">
+      <div class="container pt-5">
+        <div class="row center-h pt-5">
+          <div class="col-lg-4 center-v">
+            <div class="w-100">
+              <img src="imagens/selo.png" alt="" class="selo img-fluid">
+              <div class="desc ms-lg-3 ms-4">
+                <h4 class="c-verdee fw-400">
+                  Uma promoção para<br>
+                  cooperados de todo o Brasil!
+                </h4>
+                <hr>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 imgs">
+            <div class="w-100 text-end">
+              <img src="imagens/splash-text.png" alt="" class="splash">
+            </div>
+            <img src="imagens/mulher.png" alt="" class="mulher img-fluid">
           </div>
         </div>
 
@@ -133,9 +162,10 @@
     </section>
 
     <section id="participe" class="bg-branco pb-5">
-      <div class="container py-5">
+      <div class="nav-space"></div>
+      <div class="container pb-5">
         <div class="row center-s">
-          <div class="col-lg-3">
+          <div class="col-xl-3 col-lg-4 col-sm-6">
             <h5 class="fw-300 c-verdee mb-0">
               A cada <span class="bg-verdec border-radius-25 p-1 fw-600">R$ 200</span> na Conta Capital, você ganha uma chance e concorre aos prêmios todos os dias e ao sorteio final.
             </h5>
@@ -143,7 +173,7 @@
           <div class="col-lg-1 h-100 center-s">
             <div class="line">&nbsp;</div>
           </div>
-          <div class="col-lg-3">
+          <div class="col-xl-3 col-lg-4 col-sm-6">
             <p class="c-verdee fw-600">
               <span class="bg-verdec num">
                 1
@@ -176,27 +206,220 @@
       </div>
     </section>
 
-    <section id="premios" class="bg-turq ">
+    <section id="premios" class="bg-turq">
       <div class="container">
-        <div class="row">
-          <div class="col">
+        <div class="row center-h pb-4">
+          <div class="col-xl-7 col-lg-9">
             <img src="imagens/todo-dia.png" alt="todo dia" class="tododia" >
             <h4 class="c-branco fw-400">
               Prêmios de <b>10 mil</b>* pontos coopera
             </h4>
           </div>
         </div>
-      </div>
-      <div class="container py-5">
         <div class="row center-s">
-          <div class="col">
-
+          <div class="col-xl-7 col-lg-9">
+            <img src="imagens/20motos.png" alt="20 motos" class="motos">
+            <img src="imagens/homem-50carros.png" alt="50 carros" class="carros">
+            <div class="sorteiofinal">
+              <img src="imagens/sorteio-final.png" alt="sorteio" class="sorteio mb-2">
+              <div class="btn bg-turq-600 c-branco fw-700 fs-150 w-100">
+                xx/xx/xxxx
+              </div>
+              <p class="small c-branco mt-3 mb-2">
+                * 10 mil pontos equivalem a R$&nbsp;208,50.
+              </p>
+              <p class="small c-branco">
+                ** Os carros e motos serão sorteados<br class="d-none d-sm-block">
+                por sistema regional (central).
+              </p>
+            </div>
           </div>
         </div>
+      </div>
 
+      <div class="w-100 bg-verdee">
+        <div class="container py-5">
+          <div class="row py-5">
+            <div class="col text-center">
+              <h1 class="big fw-900 c-branco">
+                TODO DIA
+              </h1>
+              <h4 class="c-branco fw-300 mb-0">
+                Mais de 100 prêmios<br>
+                instantâneos!
+              </h4>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   
+    <section id="codigos" class="bg-branco">
+      <div class="container py-5">
+        <div class="row center-h py-5">
+          <div class="col-xl-5 col-lg-7 text-center">
+            <h2 class="c-verdee fw-700 text-uppercase">
+              Consulte seus códigos
+            </h2>
+            <p class="c-verdee">
+              Os códigos serão disponibilizados três dias<br>
+              após a integralização em sua Conta Capital.
+            </p>
+            <p class="c-verdee">
+              Digite seu <b>CPF</b> ou <b>CNPJ</b>, consulte seus<br>
+              códigos e use no <b>Painel da Sorte</b>.
+            </p>
+            <div class="input d-flex justify-content-between border-2 border-turq border-radius-25">
+              <input type="text" placeholder="Digite seu CPF/CNPJ" class="border-0 c-verdee w-100 ms-sm-3">
+              <button class="btn btn-click bg-verdee c-branco border-radius-25 fw-600 small px-3">
+                PROCURAR
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-100 bg-turq">
+        <div class="container py-5">
+          <div class="row center-h py-5">
+            <div class="col-xl-5 col-lg-7 text-center">
+              <h2 class="c-branco fw-400">
+                Olá, <b>nome do cooperado</b>!
+              </h2>
+
+              <table class="table mt-5 table-borderless">
+                <thead>
+                  <tr>
+                    <th scope="col-1">
+                      CÓDIGO
+                    </th>
+                    <th scope="col-1">
+                      STATUS
+                    </th>
+                    <th scope="col-1">
+                      RESULTADO
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="active">
+                    <td class="cod">
+                      000000
+                    </td>
+                    <td>
+                      Ativo
+                    </td>
+                    <td>
+                      
+                    </td>
+                  </tr>
+                  <tr class="active">
+                    <td class="cod">
+                      000001
+                    </td>
+                    <td>
+                      Ativo
+                    </td>
+                    <td>
+                      
+                    </td>
+                  </tr>
+                  <tr class="active">
+                    <td class="cod">
+                      000002
+                    </td>
+                    <td>
+                      Ativo
+                    </td>
+                    <td>
+                      
+                    </td>
+                  </tr>
+                  <tr class="win">
+                    <td class="cod">
+                      000003
+                    </td>
+                    <td>
+                      Inativo
+                    </td>
+                    <td>
+                      Premiado
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="cod">
+                      000004
+                    </td>
+                    <td>
+                      Inativo
+                    </td>
+                    <td>
+                      Não premiado
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="cod">
+                      000005
+                    </td>
+                    <td>
+                      Inativo
+                    </td>
+                    <td>
+                      Não premiado
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="numeros" class="bg-branco">
+      <div class="container py-5">
+        <div class="row center-h py-5">
+          <div class="col-xl-7 col-lg-9 text-center">
+            
+            <h2 class="c-verdee fw-400 text-uppercase">
+              Consulte seus<br>
+              <b>Números da sorte</b>
+            </h2>
+            <p class="c-verdee">
+              Os números da sorte, para concorrer ao sorteio<br class="d-none d-sm-block">
+              final serão disponibilizados no dia <b>XX/XX/2023</b>.
+            </p>
+            <span class="bg-turq c-branco px-4 py-2 border-radius-05 d-md-inline-block">
+              Data do sorteio final: <b>XX/XX/2023</b>
+            </span>
+          </div>
+        </div>
+      </div>
+
+    </section>    
+
+    <section id="infos" class="bg-verdec">
+      <div class="container py-5">
+        <div class="row center-h py-5">
+          <div class="col-xl-7 col-lg-9 text-center">
+            <a class="btn btn-click bg-verdee c-branco border-radius-05 mb-3">
+              REGULAMENTOS
+            </a>
+            <br>
+            <a class="btn btn-click bg-verdee c-branco border-radius-05 mb-3">
+              DÚVIDAS
+            </a>
+            <br>
+            <a class="btn btn-click bg-verdee c-branco border-radius-05">
+              DESCADASTRAMENTO
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </section>  
 
     <footer id="footer" class="bg-branco c-verdee">
       <div class="container py-5">
@@ -214,7 +437,7 @@
           </div>
 
         </div>
-        <div class="row">
+        <div class="row pb-5 pb-lg-0">
           <div class="col-xl-9 col-lg-8">
             <p class="c-verdee small">
               <b>Central de Atendimento:</b><br>
@@ -242,7 +465,18 @@
   -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   <script src="script/painel.js"></script>
+  <script src="script/copy-cod.js"></script>
   
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var opener = document.querySelector('.opener');
+      var painel = document.querySelector('#painel');
+
+      opener.addEventListener('click', function() {
+        painel.classList.toggle('open');
+      });
+    });
+  </script>
 
 </body>
 
