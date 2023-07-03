@@ -1,3 +1,29 @@
+
+/*
+------------------- RESIZE -------------------
+*/
+$(document).ready(function() {
+  $('.resize').click(function() {
+    var painel = $('#painel');
+
+    if (painel.hasClass('open')) {
+      painel.removeClass('open');
+      painel.addClass('closing');
+      setTimeout(function() {
+        painel.removeClass('closing');
+      }, 250);
+    } else {
+      painel.addClass('opening');
+      setTimeout(function() {
+        painel.removeClass('opening');
+        painel.addClass('open');
+      }, 250);
+    }
+  });
+});
+/*
+------------------- RASPINHA -------------------
+*/
 (function() {
 
   'use strict';
