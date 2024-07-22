@@ -1,5 +1,6 @@
 /* styles.css */
-body {
+
+body{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,27 +19,29 @@ body {
 
 .row {
   display: flex;
-  gap: 0.25rem;
-  margin-bottom: 0.25rem;
+  gap: .25rem;
+  margin-bottom: .25rem;
 }
 
 .cell {
   width: 100px;
   height: 100px;
   background-color: #f0f0f0;
-  border: 1px solid rgba(0, 0, 0, 0.5019607843);
-  border-radius: 0.25rem;
+  border: 1px solid #00000080;
+  border-radius: .25rem;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 2em;
   cursor: pointer;
+  &:hover {
+    background-color: lightgrey;
+  }
 }
-.cell:hover {
-  background-color: lightgrey;
-}
+
+
 
 .saindo {
   opacity: 0.5;
   transition: opacity 0.5s ease;
-}/*# sourceMappingURL=styles.css.map */
+}
